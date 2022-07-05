@@ -20,11 +20,11 @@ int main(void)
 		{
 			putchar(ch);
 			putchar(ch2);
-/*			if ((ch != 56) && (ch2 != 57))  */
-/*			{ */
+			if (!((ch == 56) && (ch2 == 57)))
+			{
 				putchar(',');
 				putchar(' ');
-/*			} */
+			}
 		}
 	}
 	putchar('\n');
