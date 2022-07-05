@@ -20,7 +20,7 @@ void times_table(void)
 		for (col = 0; col <= 9; col++)
 		{
 			prod = row * col;
- 			if (prod <= 9)
+			if (prod <= 9)
 			{
 				if (col != 0)
 				{
