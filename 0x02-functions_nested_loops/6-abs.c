@@ -7,8 +7,8 @@
 /* Function definition for  the function that prints a to z */
 
 /**
- * print_sign -  check if an input is +,- or 0
- * @n : integer - the character to be checked
+ * _abs -  reruns absolute value of n
+ * @n : integer - number to be checked
  * Return: 1 for lower case or 0 for other.
  */
 
