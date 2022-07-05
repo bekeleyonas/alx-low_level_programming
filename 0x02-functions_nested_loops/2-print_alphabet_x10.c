@@ -7,7 +7,7 @@
 /* Function definition for  the function that prints a to z */
 
 /**
- * print_alphabet - Prints the a to z.
+ * print_alphabet_x10 - Prints the a to z 10 times.
  *
  * Return: no return.
  */
