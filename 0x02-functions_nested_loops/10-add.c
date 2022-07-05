@@ -7,7 +7,7 @@
 /* Function definition for  the function that prints a to z */
 
 /**
- * add(int num1, int num2) -  reruns multiplication time table
+ * add -  reruns multiplication time table
  * @num1 : number to add
  * @num2 : number to add
  * Return: 1 for lower case or 0 for other.
