@@ -1,10 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 /* more headers goes there */
 /* Below is the function definition for a function that prints a to z */
-
-void print_alphabet();
 
 /* betty style doc for function main goes there */
 /**
@@ -34,7 +30,7 @@ void print_alphabet(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(ch);
+		_putchar(ch);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
