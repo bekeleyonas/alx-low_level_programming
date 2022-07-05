@@ -36,24 +36,19 @@ void print_times_table(int n)
 				}
 				else if (prod > 99)
 				{
-					quo = prod / 100;
-					quo2 = (prod / 10) % 10;
-					rem = prod % 10;
 					_putchar (',');
 					_putchar (' ');
-					_putchar ('0' + quo);
-					_putchar ('0' + quo2);
-					_putchar ('0' + rem);
+					_putchar ('0' + (prod / 100));
+					_putchar ('0' + ((prod / 10) % 10));
+					_putchar ('0' + (prod % 10));
 				}
 				else
 				{
-					quo = prod / 10;
-					rem = prod % 10;
 					_putchar (',');
 					_putchar (' ');
 					_putchar (' ');
-					_putchar ('0' + quo);
-					_putchar ('0' + rem);
+					_putchar ('0' + (prod / 10));
+					_putchar ('0' + (prod % 10));
 				}
 			}
 			_putchar('\n');
