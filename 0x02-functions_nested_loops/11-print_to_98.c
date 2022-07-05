@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /* more headers goes there */
 /* Below is the function definition for a function that prints a to z */
 
