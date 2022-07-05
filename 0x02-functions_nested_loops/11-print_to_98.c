@@ -16,21 +16,23 @@
 void print_to_98(int n)
 {
 	int i, rem, quo;
-
-	for (i = n; i <= 98; i++)
+	if (n <=98)
 	{
-		if (i <= 9)
+		for (i = n; i <= 98; i++)
 		{
-			_putchar(48 + i);
+			if (i <= 9)
+			{
+				_putchar(48 + i);
+			}
+			else
+			{
+				quo = i / 10;
+				rem = i % 10;
+				_putchar(48 + quo);
+				_putchar(48 + rem);
+			}
+			_putchar(' ');
 		}
-		else
-		{
-			quo = i / 10;
-			rem = i % 10;
-			_putchar(48 + quo);
-			_putchar(48 + rem);
-		}
-		_putchar(' ');
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
