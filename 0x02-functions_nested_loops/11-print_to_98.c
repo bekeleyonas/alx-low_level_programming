@@ -15,24 +15,36 @@
 
 void print_to_98(int n)
 {
-	int i, rem, quo;
-	if (n <=98)
+	if (n <= 98)
 	{
-		for (i = n; i <= 98; i++)
+		for (; n <= 98; n++)
 		{
-			if (i <= 9)
+			if (n == 98)
 			{
-				_putchar(48 + i);
+				printf("%d", n);
+				printf("\n");
+				break;
 			}
 			else
 			{
-				quo = i / 10;
-				rem = i % 10;
-				_putchar(48 + quo);
-				_putchar(48 + rem);
+				printf("%d, ", n);
 			}
-			_putchar(' ');
 		}
-		_putchar('\n');
+	}
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
 	}
 }
