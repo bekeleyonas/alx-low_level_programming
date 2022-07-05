@@ -19,7 +19,7 @@ int main(void)
 		for (ch2 = ch + 1; ch2 <= 57; ch2++)
 		{
 			putchar(ch);
-			putchar)ch2);
+			putchar(ch2);
 			if ((ch != 56) && (ch2 != 57))
 			{
 				putchar(',');
