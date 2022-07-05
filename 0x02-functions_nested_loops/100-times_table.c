@@ -51,6 +51,7 @@ void print_times_table(int n)
 					rem = prod % 10;
 					_putchar (',');
 					_putchar (' ');
+					_putchar (' ');
 					_putchar ('0' + quo);
 					_putchar ('0' + rem);
 				}
