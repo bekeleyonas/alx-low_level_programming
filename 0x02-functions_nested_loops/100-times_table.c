@@ -14,7 +14,7 @@
 
 void print_times_table(int n)
 {
-	int row, col, rem, quo, quo2, prod;
+	int row, col, prod;
 
 	if ((n >= 0) && (n < 15))
 	{
