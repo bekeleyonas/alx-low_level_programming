@@ -8,8 +8,8 @@
 
 /**
  * _islower -  check if an input is lower case character
- *
- * Return: no return.
+ * @c - integer - the character to be checked
+ * Return: 1 for lower case or 0 for other.
  */
 
 int _islower(int c)
@@ -17,10 +17,10 @@ int _islower(int c)
 
 	if ((c >= 97) && (c <= 122))
 	{
-		return(1);
+		return( 1 );
 	}
 	else
 	{
-		return(0);
+		return( 0 );
 	}
 }
