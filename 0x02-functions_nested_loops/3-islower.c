@@ -7,7 +7,7 @@
 /* Function definition for  the function that prints a to z */
 
 /**
- * print_alphabet_x10 - Prints the a to z 10 times.
+ * _islower -  check if an input is lower case character
  *
  * Return: no return.
  */
@@ -15,7 +15,7 @@
 int _islower(int c)
 {
 
-	if ((c >=97) && (c <= 122))
+	if ((c >= 97) && (c <= 122))
 	{
 		return(1);
 	else
