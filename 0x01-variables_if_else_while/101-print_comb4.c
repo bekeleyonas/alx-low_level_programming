@@ -23,7 +23,7 @@ int main(void)
 				putchar(ch);
 				putchar(ch2);
 				putchar(ch3);
-				if (!((ch == 56) && (ch2 == 57) && (ch3 == 55)))
+				if (!((ch == 55) && (ch2 == 56) && (ch3 == 57)))
 				{
 					putchar(',');
 					putchar(' ');
