@@ -14,7 +14,7 @@ int main(void)
 	printf("%lu, ", pre);
 	printf("%lu, ", last);
 
-	while (i <= 98)
+	while (i < 98)
 	{
 		sum = last + pre;
 
