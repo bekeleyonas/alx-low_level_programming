@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i = 2;
-	unsigned long pre = 1, last = 2, sum = last;
+	float pre = 1, last = 2, sum = last;
 
 	printf("%lu", pre);
 	printf(", %lu", last);
