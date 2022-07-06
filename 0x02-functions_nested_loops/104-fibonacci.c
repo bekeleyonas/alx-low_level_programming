@@ -1,38 +1,45 @@
 #include <stdio.h>
-#include <limits.h>
 /**
-  * main - Prints the sum of Even Fibonacci numbers
-  * less than 4000000.
-  *
-  * Return: Nothing!
+  * main - print the first 98 fibonacci numbers.
+  * Return: Nothing.
   */
 int main(void)
 {
-	int i = 2;
-	unsigned long pre = 1, last = 2, sum = last;
+	int count;
+	unsigned long i, j, k;
+	unsigned long m, n, p, carry;
 
-	printf("%lu", pre);
-	printf(", %lu", last);
-
-	while (i <= 92)
+	count = 0;
+	i = 0;
+	j = 1;
+	for (count = 1; count <= 91; count++)
 	{
-		sum = last + pre;
-
-		printf(", %lu", sum);
-
-		pre = last;
-		last = sum;
-
-		i = i + 1;
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu, ", k);
 	}
-	for (i = 93; i <= 98; i++)
+	m = i % 1000;
+	i = i / 1000;
+	n = j % 1000;
+	j = j / 1000;
+	while (count <= 98)
 	{
-		sum = (last + pre) / 10;
-		printf(", %lu", sum);
-		pre = last;
-		last = sum;
+		carry = (m + n) / 1000;
+		p = (m + n) - carry * 1000;
+		k = (i + j) + carry;
+		m = n;
+		n = p;
+		i = j;
+		j = k;
+		if (p >= 100)
+			printf("%lu%lu", k, p);
+		else
+			printf("%lu0%lu", k, p);
+		if (count != 98)
+			printf(", ");
+		count++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
-
 }
