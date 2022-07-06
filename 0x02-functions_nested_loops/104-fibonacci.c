@@ -11,14 +11,14 @@ int main(void)
 	int i = 2;
 	unsigned long pre = 1, last = 2, sum = last;
 
-	printf("%lu, ", pre);
-	printf("%lu, ", last);
+	printf("%lu", pre);
+	printf(", %lu", last);
 
 	while (i < 98)
 	{
 		sum = last + pre;
 
-		printf("%lu, ", sum);
+		printf(", %lu", sum);
 
 		pre = last;
 		last = sum;
