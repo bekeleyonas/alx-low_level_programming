@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <limits.h>
 /**
   * main - Prints the sum of Even Fibonacci numbers
   * less than 4000000.
@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i = 2;
-	float pre = 1, last = 2, sum = last;
+	unsigned long pre = 1, last = 2, sum = last;
 
 	printf("%lu", pre);
 	printf(", %lu", last);
