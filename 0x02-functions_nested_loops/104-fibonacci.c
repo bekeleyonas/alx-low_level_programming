@@ -8,7 +8,7 @@
   */
 int main(void)
 {
-	int i = 2, tmp;
+	int i = 2;
 	unsigned long pre = 1, last = 2, sum = last;
 
 	printf("%lu", pre);
@@ -28,8 +28,7 @@ int main(void)
 	for (i = 93; i <= 98; i++)
 	{
 		sum = (last + pre) / 10;
-		tmp = (last + pre) % 10;
-		printf(", %lu%d", sum,tmp);
+		printf(", %lu", sum);
 		pre = last;
 		last = sum;
 	}
