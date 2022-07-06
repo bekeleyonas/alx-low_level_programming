@@ -28,7 +28,7 @@ int main(void)
 	for (i = 93; i <= 98; i++)
 	{
 		sum = (last + pre) % 10;
-		printf(", %lu", sum)
+		printf(", %lu", sum);
 		pre = last;
 		last = sum;
 	}
