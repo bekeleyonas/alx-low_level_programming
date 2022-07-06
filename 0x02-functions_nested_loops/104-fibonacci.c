@@ -14,7 +14,7 @@ int main(void)
 	printf("%lu", pre);
 	printf(", %lu", last);
 
-	while (i <= 98)
+	while (i <= 92)
 	{
 		sum = last + pre;
 
@@ -25,7 +25,14 @@ int main(void)
 
 		i = i + 1;
 	}
-
+	for (i = 93; i <= 98; i++)
+	{
+		sum = (last + pre) % 10;
+		printf(", %lu", sum)
+		pre = last;
+		last = sum;
+	}
 	printf("\n");
 	return (0);
+
 }
