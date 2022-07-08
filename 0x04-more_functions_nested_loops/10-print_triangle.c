@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_square -  print - # size times
+ * print_triangle -  print - # size times
  *
  * @size : number of times to print
  * Return: none
  */
 
-void print_square(int size)
+void print_triangle(int size)
 {
 	int i, j, k;
 
