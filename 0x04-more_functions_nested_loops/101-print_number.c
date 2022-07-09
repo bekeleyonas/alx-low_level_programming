@@ -9,15 +9,15 @@
 
 void print_number(int n)
 {
-	int m, d;
+	unsigned int m, d;
 
 	m = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		m = m * (-1);
-		n  = m;
+		n = n * (-1);
+		m = n;
 	}
 
 	m = m / 10;
@@ -27,5 +27,5 @@ void print_number(int n)
 		print_number(m);
 	}
 	d = n % 10;
-	_putchar(48 + d);
+	_putchar('0' + d);
 }
