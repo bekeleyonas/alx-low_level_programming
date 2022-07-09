@@ -1,41 +1,30 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-  * main - Prints a Fizz Buzz program
-  *
-  * Return: Always 0 (Success)
-  */
+ * main - largest prime factor
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int i, i3, i5;
+	long num = 612852475143;
+	long  d;
 
-	for (i = 1; i <= 100; i++)
+	while (d < (num / 2))
 	{
-		i3 = i % 3;
-		i5 = i % 5;
-		if (i3 == 0 && i5 == 0)
+		if ((num % 2) == 0)
 		{
-			printf("FizzBuzz");
+			num = num / 2;
+			continue;
 		}
-		else if (i3 == 0)
+
+		for (d = 3; d < (num / 2); d = d + 2)
 		{
-			printf("Fizz");
-		}
-		else if (i5 == 0)
-		{
-			printf("Buzz");
-		}
-		else
-		{
-			printf("%d", i);
-		}
-		if (i != 100)
-		{
-			printf(" ");
+			if ((num % d) == 0)
+				num = num / d;
 		}
 	}
-	printf("\n");
 
-	return (0);
+	printf("%ld\n", num);
+	return(0);
 }
