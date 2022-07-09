@@ -4,8 +4,6 @@
  * print_number -  print any integer
  *
  * @n : number of times to print
- * @m : temporary integer holder
- * @d : last digit holder
  * Return: none
  */
 
