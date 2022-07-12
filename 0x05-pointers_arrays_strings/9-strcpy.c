@@ -1,4 +1,4 @@
-#include "main,h"
+#include "main.h"
 /**
   * _strcpy - Copy a string
   * @dest: Destination value
@@ -8,14 +8,15 @@
   */
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; src[i] != '\0'; i++)
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
+		i++;
 	}
 
-	dest[i++] = '\0';
+	dest[i] = '\0';
 
 	return (dest);
 }
