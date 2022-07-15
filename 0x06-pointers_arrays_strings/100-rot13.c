@@ -1,25 +1,27 @@
 #include "main.h"
 /**
   * *rot13 - chars to with numbers
-  * @str: string
+  * @st: string
   *
   * Return:  string
   */
-char *rot13(char *str)
+char *rot13(char *st)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (st[i] != '\0')
 	{
-		if ((str[i] >= 'a' && str[i] < 'n') || (str[i] >= 'A' && str[i] < 'N'))
+		while ((st[i] >= 'a' && st[i] <= 'z') || (st[i] >= 'A' && st[i] <= 'Z'))
 		{
-			str[i] = str[i] + 13;
-		}
-		else if ((str[i] > 'm' && str[i] <= 'z') || (str[i] > 'M' && str[i] <= 'Z'))
-		{
-			str[i] = str[i] - 13;
+			if ((st[i] > 'm' && st[i] <= 'z') || (st[i] > 'M' && st[i] <= 'Z'))
+			{
+				st[i] = st[i] - 13;
+				break;
+			}
+			st[i] = st[i] + 13;
+			break;
 		}
 		i++;
 	}
-	return (str);
+	return (st);
 }
