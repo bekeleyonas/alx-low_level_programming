@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-  * *_strstr - finds a string in a given string  in another string
-  * @heystack: string to search target
-  * @needle: string to find
+  * *_strstr - counts the charaters in a given string  in another string
+  * @heystack: search target
+  * @needle: character to find
   *
   *
   * Return: the memory area filled
@@ -11,18 +11,25 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i = 0, j = 0;
 
-	while (heystack[j])
+	while (haystack[i])
 	{
-		if heystack[j] == needle[0])
+		while (needle[j])
 		{
-			i = 1;
-			while (accept[i])
+			if (haystack[i + j] != needle[j])
 			{
-			if (s[j] == accept[i])
-				return (s + j);
-			i++;
+				break;
+			}
+
+			j++;
 		}
-		j++;
+
+		if (needle[j] == '\0')
+		{
+			return (haystack + i);
+		}
+
+		i++;
 	}
-	return (NULL);
+
+	return ('\0');
 }
