@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * *_strstr - counts the charaters in a given string  in another string
-  * @heystack: search target
+  * @haystack: search target
   * @needle: character to find
   *
   *
