@@ -1,15 +1,15 @@
 #include "main.h"
 /**
-  * _strlen_recursion - returns the length of a string.
-  * @s: string to print
+  * factorial -  returns the length of a string.
+  * @n: integer
   *
-  * Return: the memory area filled
+  * Return: factoria
   */
 int factorial(int n)
 {
 	if (n < 0)
 		return (-1);
-	else if ((n >= 0) && (n<= 1))
+	else if ((n >= 0) && (n <= 1))
 		return (1);
 	else
 		return (n * factorial(n - 1));
