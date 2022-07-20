@@ -10,8 +10,11 @@ int is_palindrome(char *s)
 	int n = 0;
 
 	while (s[n] != '\0')
+	{
 		n++;
-	checkpalind(s, n);
+	}
+	n--;
+	return checkpalind(s, n);
 }
 /**
  * checkpalind( - compares string with the far end
@@ -28,4 +31,3 @@ int checkpalind(char *s, int n)
 		return (1);
 	return (checkpalind(s + 1, n - 2));
 }
-
