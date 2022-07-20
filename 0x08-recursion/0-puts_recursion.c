@@ -1,9 +1,7 @@
 #include "main.h"
 /**
   * _puts_recursion - prints a string, followed by a new line.
-  * @s: memory area to fill
-  * @b: constant byte to fill
-  * @n: bytes of memory area to fill
+  * @s: string to print
   *
   * Return: the memory area filled
   */
