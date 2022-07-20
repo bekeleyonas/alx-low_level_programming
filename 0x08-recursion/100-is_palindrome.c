@@ -14,10 +14,10 @@ int is_palindrome(char *s)
 		n++;
 	}
 	n--;
-	return checkpalind(s, n);
+	return (checkpalind(s, n));
 }
 /**
- * checkpalind( - compares string with the far end
+ * checkpalind - compares string with the far end
  * @s: string
  * @n: length
  *
